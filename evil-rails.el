@@ -36,9 +36,6 @@
 ;;; Code:
 ;;;###begin-elpa-ignore
 ;;;###end-elpa-ignore
-(require 'evil)
-(require 'rinari)
-
 (defgroup evil-rails nil
   "Evil Rails customizations."
   :prefix "evil-rails-"
@@ -46,16 +43,6 @@
 
 (defvar evil-rails-minor-mode-hook nil
   "*Hook for customising evil-rails.")
-
-(evil-ex-define-cmd "NERDTree"    'speedbar-get-focus)
-
-;; (defun evil-rails-find-controller ()
-;;   (rinari-find-controller))
-
-(defun evil-rails-find-controller ()
-  "Find controller in rails project"
-  (interactive)
-  (evil-ex-complete-argument rinari-find-controller))
 
 (evil-ex-define-cmd "Rfile"       'rinari-find-file-in-project)
 (evil-ex-define-cmd "Rcontroller" 'rinari-find-controller)
@@ -68,8 +55,7 @@
 (evil-ex-define-cmd "Rsass"       'rinari-find-sass)
 (evil-ex-define-cmd "Rjavascript" 'rinari-find-javascript)
 (evil-ex-define-cmd "Rfeature"    'rinari-find-festures)
-(evil-ex-define-cmd "Rcell"       'rinari-find-cells)
-
+(evil-ex-define-cmd "Rserver"     'rinari-web-server-restart)
 
 (provide 'evil-rails)
 ;;; evil-rails.el ends here
