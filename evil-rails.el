@@ -47,6 +47,7 @@
 (evil-ex-define-cmd "Rfile"       'rinari-find-file-in-project)
 (evil-ex-define-cmd "Rcontroller" 'rinari-find-controller)
 (evil-ex-define-cmd "Rmodel"      'rinari-find-model)
+(evil-ex-define-cmd "Rview"       'rinari-find-view)
 (evil-ex-define-cmd "Rspec"       'rinari-find-rspec)
 (evil-ex-define-cmd "Rhelper"     'rinari-find-helper)
 (evil-ex-define-cmd "Rmailer"     'rinari-find-mailer)
