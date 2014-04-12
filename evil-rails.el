@@ -1,6 +1,6 @@
 ;;; evil-rails.el --- rails.vim for Emacs
 
-;; Copyright (C) 2012 Antono Vasiljev
+;; Copyright (C) 2012, 2014 Antono Vasiljev
 
 ;; Author: Antono Vasiljev
 ;; URL: https://github.com/antono/evil-rails
@@ -8,7 +8,7 @@
 ;; Created: 2012-02-05
 ;; Keywords: ruby, rails, vim, project, convenience, web
 ;; EmacsWiki: EvilRails
-;; FIXME: Package-Requires: ((evil "X.X") (rinari "X.X"))
+;; Package-Requires: ((evil "1.0") (projectile-rails "1.0"))
 
 ;; This file is NOT part of GNU Emacs.
 
@@ -31,7 +31,7 @@
 
 ;;; Commentary:
 
-;; evil-rails is rails.vim for Emacs in evil mode
+;; evil-rails is rails.vim clone for Emacs in evil mode
 
 ;;; Code:
 ;;;###begin-elpa-ignore
@@ -44,19 +44,17 @@
 (defvar evil-rails-minor-mode-hook nil
   "*Hook for customising evil-rails.")
 
-(evil-ex-define-cmd "Rfile"       'rinari-find-file-in-project)
-(evil-ex-define-cmd "Rcontroller" 'rinari-find-controller)
-(evil-ex-define-cmd "Rmodel"      'rinari-find-model)
-(evil-ex-define-cmd "Rview"       'rinari-find-view)
-(evil-ex-define-cmd "Rspec"       'rinari-find-rspec)
-(evil-ex-define-cmd "Rhelper"     'rinari-find-helper)
-(evil-ex-define-cmd "Rmailer"     'rinari-find-mailer)
-(evil-ex-define-cmd "Rmigration"  'rinari-find-migration)
-(evil-ex-define-cmd "Rstylesheet" 'rinari-find-stylesheet)
-(evil-ex-define-cmd "Rsass"       'rinari-find-sass)
-(evil-ex-define-cmd "Rjavascript" 'rinari-find-javascript)
-(evil-ex-define-cmd "Rfeature"    'rinari-find-festures)
-(evil-ex-define-cmd "Rserver"     'rinari-web-server-restart)
+(evil-ex-define-cmd "Rfile"       'projectile-rails-find-file-in-project)
+(evil-ex-define-cmd "Rcontroller" 'projectile-rails-find-controller)
+(evil-ex-define-cmd "Rmodel"      'projectile-rails-find-model)
+(evil-ex-define-cmd "Rview"       'projectile-rails-find-view)
+(evil-ex-define-cmd "Rspec"       'projectile-rails-find-rspec)
+(evil-ex-define-cmd "Rhelper"     'projectile-rails-find-helper)
+(evil-ex-define-cmd "Rmailer"     'projectile-rails-find-mailer)
+(evil-ex-define-cmd "Rmigration"  'projectile-rails-find-migration)
+(evil-ex-define-cmd "Rstylesheet" 'projectile-rails-find-stylesheet)
+(evil-ex-define-cmd "Rjavascript" 'projectile-rails-find-javascript)
+(evil-ex-define-cmd "Rfeature"    'projectile-rails-find-festures)
 
 (provide 'evil-rails)
 ;;; evil-rails.el ends here
