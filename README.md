@@ -3,22 +3,21 @@
 rails.vim for Emacs. Based on:
 
 - [evil-mode](http://gitorious.org/evil)
-- [Rinari](http://rinari.rubyforge.org/)
+- [projectile-rails](https://github.com/asok/projectile-rails)
 
 # Supported commands
 
-    :Rcontroller
-    :Rmodel
-    :Rspec
-    :Rhelper
-    :Rmailer
-    :Rmigration
-    :Rstylesheet
-    :Rjavascript
-    :Rfile
-    :Rsass
-    :Rfeature
-    :Rcell
+ - Rfile
+ - Rcontroller
+ - Rmodel
+ - Rview
+ - Rspec
+ - Rhelper
+ - Rmailer
+ - Rmigration
+ - Rstylesheet
+ - Rjavascript
+ - Rfeature
 
 # TODO
 
