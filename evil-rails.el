@@ -1,12 +1,12 @@
-;;; evil-rails.el --- rails.vim for Emacs
+;; evil-rails.el --- Rails.vim clone for Evil
 
 ;; Copyright (C) 2012, 2014 Antono Vasiljev
 
-;; Author: Antono Vasiljev
+;; Author: Antono Vasiljev <antono.vasiljev@gmail.com>
 ;; URL: https://github.com/antono/evil-rails
-;; Version: DEV
-;; Created: 2012-02-05
-;; Keywords: ruby, rails, vim, project, convenience, web
+;; Version: 0.1
+;; Created: 2014-05-01
+;; Keywords: ruby, rails, vim, project, convenience, web, evil, projectile
 ;; EmacsWiki: EvilRails
 ;; Package-Requires: ((evil "1.0") (projectile-rails "1.0"))
 
@@ -33,9 +33,7 @@
 
 ;; evil-rails is rails.vim clone for Emacs in evil mode
 
-;;; Code:
-;;;###begin-elpa-ignore
-;;;###end-elpa-ignore
+;; Code:
 (defgroup evil-rails nil
   "Evil Rails customizations."
   :prefix "evil-rails-"
@@ -55,6 +53,7 @@
 (evil-ex-define-cmd "Rstylesheet" 'projectile-rails-find-stylesheet)
 (evil-ex-define-cmd "Rjavascript" 'projectile-rails-find-javascript)
 (evil-ex-define-cmd "Rfeature"    'projectile-rails-find-festures)
+(evil-ex-define-cmd "A"           'projectile-toggle-between-implementation-and-test)
 
 (provide 'evil-rails)
 ;;; evil-rails.el ends here
