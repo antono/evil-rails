@@ -35,7 +35,6 @@ rails.vim for Emacs. Based on:
  <kbd>:Rlocale</kbd>                  | projectile-rails-find-locale            | Find a locale file using `projectile-completions-system`.
  <kbd>:Rmailer</kbd>                  | projectile-rails-find-mailer            | Find a mailer file using `projectile-completions-system`.
  <kbd>:Rlayout</kbd>                  | projectile-rails-find-layout            | Find a layout file using `projectile-completions-system`.
-
  <kbd>:Rconsole</kbd>                 | projectile-rails-console                | Run `rails console` command in `inf-ruby` buffer.
  <kbd>:Rserver</kbd>                  | projectile-rails-server                 | Run `rails server`.
  <kbd>:Rrake</kbd>                    | projectile-rails-rake                   | Select a rake task to run using `projectile-completion-system`.
