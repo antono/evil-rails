@@ -7,6 +7,8 @@ rails.vim for Emacs. Based on:
 
 # Supported commands
 
+## Find actions
+
  - Rfile
  - Rcontroller
  - Rmodel
@@ -18,6 +20,23 @@ rails.vim for Emacs. Based on:
  - Rstylesheet
  - Rjavascript
  - Rfeature
+
+## General Actions
+
+ - Rconsole
+ - Rserver
+ - Rrake
+ - Rgenerate
+ - Rextract
+ - A 
+
+## Go-to Actions
+
+ - RGfile
+ - RGgemfile
+ - RGroutes
+ - RGschema
+ - RGspechelper
 
 # TODO
 
