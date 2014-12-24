@@ -42,6 +42,8 @@
 (defvar evil-rails-minor-mode-hook nil
   "*Hook for customising evil-rails.")
 
+;; Projectile Rails find actions.
+
 (evil-ex-define-cmd "Rfile"       'projectile-rails-find-file-in-project)
 (evil-ex-define-cmd "Rcontroller" 'projectile-rails-find-controller)
 (evil-ex-define-cmd "Rmodel"      'projectile-rails-find-model)
@@ -54,6 +56,22 @@
 (evil-ex-define-cmd "Rjavascript" 'projectile-rails-find-javascript)
 (evil-ex-define-cmd "Rfeature"    'projectile-rails-find-festures)
 (evil-ex-define-cmd "A"           'projectile-toggle-between-implementation-and-test)
+
+;; Projectile Rails general actions.
+
+(evil-ex-define-cmd "Rconsole"    'projectile-rails-console)
+(evil-ex-define-cmd "Rserver"     'projectile-rails-server)
+(evil-ex-define-cmd "Rrake"       'projectile-rails-rake)
+(evil-ex-define-cmd "Rgenerate"   'projectile-rails-generate)
+(evil-ex-define-cmd "Rextract"    'projectile-rails-extract-region)
+
+;; Projectile Rails go-to actions.
+
+(evil-ex-define-cmd "RGfile"      'projectile-rails-goto-file-at-point)
+(evil-ex-define-cmd "RGgemfile"   'projectile-rails-goto-gemfile)
+(evil-ex-define-cmd "RGroutes"    'projectile-rails-goto-routes)
+(evil-ex-define-cmd "RGschema"    'projectile-rails-goto-schema)
+(evil-ex-define-cmd "RGspechelper" 'projectile-rails-goto-spec-helper)
 
 (provide 'evil-rails)
 ;;; evil-rails.el ends here
