@@ -44,7 +44,7 @@
 
 ;; Projectile Rails find actions.
 
-(evil-ex-define-cmd "Rfile"       'projectile-rails-find-file-in-project)
+;(evil-ex-define-cmd "Rfile"       'projectile-rails-find-file-in-project)
 (evil-ex-define-cmd "Rcontroller" 'projectile-rails-find-controller)
 (evil-ex-define-cmd "Rmodel"      'projectile-rails-find-model)
 (evil-ex-define-cmd "Rview"       'projectile-rails-find-view)
