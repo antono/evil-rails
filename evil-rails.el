@@ -1,4 +1,4 @@
-;; evil-rails.el --- Rails.vim clone for Evil
+;; evil-rails.el --- Rails support for Evil Mode
 
 ;; Copyright (C) 2012, 2014 Antono Vasiljev
 
@@ -33,7 +33,7 @@
 
 ;;; Commentary:
 
-;; evil-rails is rails.vim clone for Emacs in evil mode ;; Is it still a clone?
+;; evil-rails is Ruby on Rails support fo Evil mode
 
 ;; Code:
 (defgroup evil-rails nil
