@@ -36,13 +36,14 @@
 ;; evil-rails is Ruby on Rails support fo Evil mode
 
 ;; Code:
+
+(require 'evil)
+(require 'projectile-rails)
+
 (defgroup evil-rails nil
   "Evil Rails customizations."
   :prefix "evil-rails-"
   :group 'evil-rails)
-
-(defvar evil-rails-minor-mode-hook nil
-  "*Hook for customising evil-rails.")
 
 ;; Projectile actions.
 
