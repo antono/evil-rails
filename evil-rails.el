@@ -1,4 +1,4 @@
-;; evil-rails.el --- Rails support for Evil Mode
+;;; evil-rails.el --- Rails support for Evil Mode
 
 ;; Copyright (C) 2012, 2014 Antono Vasiljev
 
