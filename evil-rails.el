@@ -6,6 +6,7 @@
 ;; URL: https://github.com/antono/evil-rails
 ;; Contributors:
 ;; - Joshua Mendoza <joshua.mdza@gmail.com>
+;; - Josh Black <raskchanky@gmail.com>
 ;; Version: 0.2
 ;; Created: 2014-05-01
 ;; Keywords: ruby, rails, vim, project, convenience, web, evil, projectile
@@ -60,8 +61,8 @@
 (evil-ex-define-cmd "Rhelper"     'projectile-rails-find-helper)
 (evil-ex-define-cmd "RChelper"    'projectile-rails-find-current-helper)
 (evil-ex-define-cmd "Rlib"        'projectile-rails-find-lib)
-(evil-ex-define-cmd "Rfeature"    'projectile-rails-find-festures)
-(evil-ex-define-cmd "Rspec"       'projectile-rails-find-rspec)
+(evil-ex-define-cmd "Rfeature"    'projectile-rails-find-feature)
+(evil-ex-define-cmd "Rspec"       'projectile-rails-find-spec)
 (evil-ex-define-cmd "RCspec"      'projectile-rails-find-current-spec)
 (evil-ex-define-cmd "Rtest"       'projectile-rails-find-test)
 (evil-ex-define-cmd "RCtest"      'projectile-rails-find-current-test)
@@ -93,7 +94,6 @@
 (evil-ex-define-cmd "RGroutes"    'projectile-rails-goto-routes)
 (evil-ex-define-cmd "RGschema"    'projectile-rails-goto-schema)
 (evil-ex-define-cmd "RGspechelper" 'projectile-rails-goto-spec-helper)
-
 
 (provide 'evil-rails)
 ;;; evil-rails.el ends here
