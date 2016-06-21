@@ -48,7 +48,19 @@
 
 ;; Projectile actions.
 
-(evil-ex-define-cmd "A"           'projectile-toggle-between-implementation-and-test)
+(evil-ex-define-cmd "A"  'projectile-toggle-between-implementation-and-test)
+(evil-ex-define-cmd "AV" '(lambda ()
+                            (interactive)
+                            (evil-window-vsplit)
+                            (windmove-right)
+                            (projectile-toggle-between-implementation-and-test)))
+(evil-ex-define-cmd "AS" '(lambda ()
+                            (interactive)
+                            (evil-window-split)
+                            (windmove-down)
+                            (projectile-toggle-between-implementation-and-test)))
+
+
 
 ;; Projectile Rails find actions.
 
