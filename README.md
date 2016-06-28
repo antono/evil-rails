@@ -46,9 +46,11 @@ rails.vim for Emacs. Based on:
  <kbd>:RGschema</kbd>                 | projectile-rails-goto-schema            | Go to `db/schema.rb` file.
  <kbd>:RGspechelper</kbd>             | projectile-rails-goto-spec-helper       | Go to `spec/spec_helper.rb` file.
 
- Ex Command                           | Projectile Command                      | Description
---------------------------------------|-----------------------------------------|-------------------------------------------------------
+ Ex Command                           | Projectile Command                                | Description
+--------------------------------------|---------------------------------------------------|----------------------------------------------------
  <kbd>:A</kbd>                        | projectile-toggle-between-implementation-and-test | Find a model using `projectile-completion-system`.
+ <kbd>:AV</kbd>                       | projectile-toggle-between-implementation-and-test | Vertical-split variant of `:A`.
+ <kbd>:AS</kbd>                       | projectile-toggle-between-implementation-and-test | Horizontal-split variant of `:A`.
 
 # TODO
 
